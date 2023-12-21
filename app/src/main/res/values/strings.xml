@@ -2,4 +2,11 @@
     <string name="app_name">Navegacion</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_btn_atras">ATRAS</string>
+    <string name="text_A">A</string>
+    <string name="text_btn_siguiente">SIGUIENTE</string>
+    <string name="text_B">B</string>
+    <string name="text_C">C</string>
+    <string name="text_btn_toA">Ir al Fragmento A</string>
+    <string name="text_btn_toB">Ir al Fragmento B</string>
 </resources>

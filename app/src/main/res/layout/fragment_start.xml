@@ -3,12 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#90CAF9"
     tools:context=".fragments.FragmentStart">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_btn_toA"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#FFC107"
+        android:text="@string/text_btn_toA"
+        android:textSize="20sp" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_btn_toB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="90dp"
+        android:background="#FFC107"
+        android:text="@string/text_btn_toB"
+        android:textSize="20sp" />
 </FrameLayout>

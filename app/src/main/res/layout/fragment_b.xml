@@ -3,12 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFAB91"
     tools:context=".fragments.FragmentB">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_btn_atrasB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/text_btn_atras"
+        android:textSize="20sp" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_btn_siguienteB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/text_btn_siguiente"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/id_text_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@string/text_B"
+        android:textSize="200sp" />
 </FrameLayout>
