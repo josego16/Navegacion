@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragmentA">
+    app:startDestination="@id/fragmentStart">
 
     <fragment
         android:id="@+id/fragmentStart"
@@ -11,21 +11,23 @@
         android:label="fragment_start"
         tools:layout="@layout/fragment_start">
         <action
-            android:id="@+id/action_fragment_toA"
+            android:id="@+id/action_fragmentStart_toA"
             app:destination="@id/fragmentA" />
         <action
-            android:id="@+id/action_fragment_toB"
+            android:id="@+id/action_fragmentStart_toB"
             app:destination="@id/fragmentB" />
     </fragment>
+
     <fragment
         android:id="@+id/fragmentA"
         android:name="com.example.navegacion.fragments.FragmentA"
         android:label="fragment_a"
         tools:layout="@layout/fragment_a">
         <action
-            android:id="@+id/action_fragment_toStart"
+            android:id="@+id/action_fragmentA_toStart"
             app:destination="@id/fragmentStart" />
     </fragment>
+
     <fragment
         android:id="@+id/fragmentB"
         android:name="com.example.navegacion.fragments.FragmentB"
@@ -33,12 +35,16 @@
         tools:layout="@layout/fragment_b">
 
         <action
-            android:id="@+id/action_fragment_toC"
-            app:destination="@id/fragmentC" />
+            android:id="@+id/action_fragmentB_toC"
+            app:destination="@id/fragmentA" />
         <action
-            android:id="@+id/action_fragment_toStart"
-            app:destination="@id/fragmentStart" />
+            android:id="@+id/action_fragmentB_toStart"
+            app:destination="@id/fragmentC" />
+        <argument
+            android:name="name"
+            app:argType="string" />
     </fragment>
+
     <fragment
         android:id="@+id/fragmentC"
         android:name="com.example.navegacion.fragments.FragmentC"
@@ -46,7 +52,7 @@
         tools:layout="@layout/fragment_c">
 
         <action
-            android:id="@+id/action_fragment_toB"
+            android:id="@+id/action_fragmentC_toB"
             app:destination="@id/fragmentB" />
         <action
             android:id="@+id/action_fragmentC_toStart"
